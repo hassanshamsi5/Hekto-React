@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@600&display=swap');
+
+.bg {
+  background: rgba(126, 51, 224, 1);
+}
+
+.navbar {
+  /* --bs-navbar-padding-x: 0; */
+  /* --bs-navbar-padding-y: 0.5rem; */
+  /* --bs-navbar-color: rgba(0, 0, 0, 0.55); */
+  --bs-navbar-hover-color: rgba(0, 0, 0, 0.7);
+  --bs-navbar-disabled-color: rgba(0, 0, 0, 0.3);
+  --bs-navbar-active-color: rgba(0, 0, 0, 0.9);
+  --bs-navbar-brand-padding-y: 0.3125rem;
+  --bs-navbar-brand-margin-end: 1rem;
+  --bs-navbar-brand-font-size: 1.25rem;
+  /* --bs-navbar-brand-color: rgba(0, 0, 0, 0.9); */
+  --bs-navbar-brand-hover-color: rgba(0, 0, 0, 0.9);
+  --bs-navbar-nav-link-padding-x: 0.5rem;
+  --bs-navbar-toggler-padding-y: 0.25rem;
+  --bs-navbar-toggler-padding-x: 0.75rem;
+  --bs-navbar-toggler-font-size: 1.25rem;
+  --bs-navbar-toggler-icon-bg: url(data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%280, 0, 0, 0.55%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e);
+  --bs-navbar-toggler-border-color: rgba(0, 0, 0, 0.1);
+  --bs-navbar-toggler-border-radius: 0.375rem;
+  --bs-navbar-toggler-focus-width: 0.25rem;
+  --bs-navbar-toggler-transition: box-shadow 0.15s ease-in-out;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  padding: var(--bs-navbar-padding-y) var(--bs-navbar-padding-x);
+}
+
+.bg-image-1 {
+  background-image: url(./Images/1.png);
+  height: 50vh;
+  background-repeat: no-repeat;
+}
+
+.home-1 {
+  background: rgba(242, 240, 255, 1);
+  height: 65vh;
+}
+
+.bg-1 {
+  background: rgba(246, 247, 251, 1);
+}
+
+section {
+  margin: 1rem;
+}
+
+.hov:hover {
+  background: rgba(47, 26, 196, 1);
+  color: white;
+
+}
+.text-1{
+  color: rgba(251, 46, 134, 1);
+ }
+.hov-1:hover {
+  color: rgba(251, 46, 134, 1);
+  text-decoration: underline;
+}
+
+.main-content {
+  color: rgba(26, 11, 91, 1);
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+.main-content-1 {
+  font-family: 'Josefin Sans', sans-serif;
+}
+
