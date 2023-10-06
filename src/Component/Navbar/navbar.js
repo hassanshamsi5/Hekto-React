@@ -2,7 +2,7 @@ import '../../App.css';
 function App() {
     return (
         <>
-            <div>
+            {/* <div> */}
                 <nav className="navbar navbar-expand-lg bg text-white">
                     <div className="container">
                         <a className="navbar-brand" href="/"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi bi-envelope" viewBox="0 0 16 16">
@@ -76,7 +76,7 @@ function App() {
                         </div>
                     </div>
                 </nav>
-            </div>
+            {/* </div> */}
         </>
     )
 }

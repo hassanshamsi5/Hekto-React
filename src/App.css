@@ -3,7 +3,9 @@
 .bg {
   background: rgba(126, 51, 224, 1);
 }
-
+p,li{
+  color: #ACABC3;
+}
 .navbar {
   /* --bs-navbar-padding-x: 0; */
   /* --bs-navbar-padding-y: 0.5rem; */
@@ -48,6 +50,16 @@
   background: rgba(246, 247, 251, 1);
 }
 
+.bg-2 {
+  background: #F1F0FF;
+}
+
+.bg-3 {
+  background: #FFF6FB;
+
+  /* shadow */
+  box-shadow: 0px 8px 40px 0px rgba(49, 32, 138, 0.05);
+}
 section {
   margin: 1rem;
 }
@@ -57,9 +69,13 @@ section {
   color: white;
 
 }
-.text-1{
+
+.text-1 {
   color: rgba(251, 46, 134, 1);
- }
+  font-family: 'Josefin Sans', sans-serif;
+
+}
+
 .hov-1:hover {
   color: rgba(251, 46, 134, 1);
   text-decoration: underline;
@@ -74,3 +90,19 @@ section {
   font-family: 'Josefin Sans', sans-serif;
 }
 
+.cal-0::marker {
+  color: #F52B70;
+  ;
+}
+
+.cal-1::marker {
+  color: #2B2BF5;
+  ;
+}
+
+.cal-2::marker {
+  color: #2BF5CC;
+}
+.text-4{
+  color: #B8B8DC;
+}
