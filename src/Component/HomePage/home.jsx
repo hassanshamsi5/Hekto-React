@@ -1,28 +1,34 @@
-import sofa from '../../../Images/2.png'
-import chair1 from '../../../Images/Untitled-2.png'
-import chair2 from '../../../Images/Untitled-3.png'
-import chair3 from '../../../Images/Untitled-4.png'
-import chair4 from '../../../Images/6.png'
-import dash from '../../../Images/7.png'
-import chair5 from '../../../Images/chair-1.png'
-import chair6 from '../../../Images/chair-2.png'
-import chair7 from '../../../Images/chair-3.png'
-import chair8 from '../../../Images/chair-4.png'
-import chair9 from '../../../Images/chair-5.png'
-import chair10 from '../../../Images/chair-6.png'
-import card1 from '../../../Images/card1.png'
-import card2 from '../../../Images/card2.png'
-import card3 from '../../../Images/card3.png'
-import card4 from '../../../Images/card4.png'
-import unifeat from '../../../Images/Group 153.png'
-import card5 from '../../../Images/15.png'
-import card6 from '../../../Images/16.png'
-import card7 from '../../../Images/new.png'
-import card8 from '../../../Images/new-2.png'
-import card9 from '../../../Images/new-3.png'
-import DiscountItem from '../../../Images/Group 154.png'
+import sofa from '../../Images/2.png'
+import chair1 from '../../Images/Untitled-2.png'
+import chair2 from '../../Images/Untitled-3.png'
+import chair3 from '../../Images/Untitled-4.png'
+import chair4 from '../../Images/6.png'
+import dash from '../../Images/7.png'
+import chair5 from '../../Images/chair-1.png'
+import chair6 from '../../Images/chair-2.png'
+import chair7 from '../../Images/chair-3.png'
+import chair8 from '../../Images/chair-4.png'
+import chair9 from '../../Images/chair-5.png'
+import chair10 from '../../Images/chair-6.png'
+import card1 from '../../Images/card1.png'
+import card2 from '../../Images/card2.png'
+import card3 from '../../Images/card3.png'
+import card4 from '../../Images/card4.png'
+import unifeat from '../../Images/Group 153.png'
+import card5 from '../../Images/15.png'
+import card6 from '../../Images/16.png'
+import card7 from '../../Images/new.png'
+import card8 from '../../Images/new-2.png'
+import card9 from '../../Images/new-3.png'
+import card10 from '../../Images/card10.png'
+import card11 from '../../Images/card11.png'
+import card12 from '../../Images/card12.png'
+import DiscountItem from '../../Images/Group 154.png'
+import img55 from '../../Images/55.png'
+import { Swiper, SwiperSlide } from 'swiper/react';
+import 'swiper/css';
+import '../../App.css';
 
-import '../../../App.css';
 function App() {
   return (
     <>
@@ -392,16 +398,177 @@ function App() {
         </div>
       </section>
 
-<section>
-  <div className="container">
-    <div className="row">
-      <h1 className='main-content text-center'>Top Categories</h1>
-      
-    </div>
-  </div>
-</section>
+      <section>
+        <div className="container main-content">
+          <div className="row">
+            <h1 className='main-content text-center'>Top Categories</h1>
+            <Swiper
+              spaceBetween={50}
+              slidesPerView={3}
 
+              onSlideChange={() => console.log('slide change')}
+              onSwiper={(swiper) => console.log(swiper)}
+            >
+              <SwiperSlide><img src={chair1} alt="Discount Item" className='img-fluid bg-6 p-5' />
+                <div className="row">
+                  <div className="col-md-9">
+                    <h5 className='text-center'>Mini LCW Chair</h5>
+                    <p className='text-center'>$56.00</p>
+                  </div>
+                </div>
+              </SwiperSlide>
+              <SwiperSlide><img src={chair2} alt="Discount Item" className='img-fluid bg-6 p-5' />
+                <div className="row">
+                  <div className="col-md-9">
+                    <h5 className='text-center'>Mini LCW Chair</h5>
+                    <p className='text-center'>$56.00</p>
+                  </div>
+                </div>
+              </SwiperSlide>
+              <SwiperSlide><img src={chair3} alt="Discount Item" className='img-fluid bg-6 p-5' />
+                <div className="row">
+                  <div className="col-md-9">
+                    <h5 className='text-center'>Mini LCW Chair</h5>
+                    <p className='text-center'>$56.00</p>
+                  </div>
+                </div>
+              </SwiperSlide>
+              <SwiperSlide><img src={chair4} alt="Discount Item" className='img-fluid bg-6 p-5' />
+                <div className="row">
+                  <div className="col-md-9">
+                    <h5 className='text-center'>Mini LCW Chair</h5>
+                    <p className='text-center'>$56.00</p>
+                  </div>
+                </div>
+              </SwiperSlide>
+              <SwiperSlide><img src={chair1} alt="Discount Item" className='img-fluid bg-6 p-5' />
+                <div className="row">
+                  <div className="col-md-9">
+                    <h5 className='text-center'>Mini LCW Chair</h5>
+                    <p className='text-center'>$56.00</p>
+                  </div>
+                </div>
+              </SwiperSlide>
+              <SwiperSlide><img src={chair2} alt="Discount Item" className='img-fluid bg-6 p-5' />
+                <div className="row">
+                  <div className="col-md-9">
+                    <h5 className='text-center'>Mini LCW Chair</h5>
+                    <p className='text-center'>$56.00</p>
+                  </div>
+                </div>
+              </SwiperSlide>
+              <SwiperSlide><img src={chair3} alt="Discount Item" className='img-fluid bg-6 p-5' />
+                <div className="row">
+                  <div className="col-md-9">
+                    <h5 className='text-center'>Mini LCW Chair</h5>
+                    <p className='text-center'>$56.00</p>
+                  </div>
+                </div>
+              </SwiperSlide>
+              <SwiperSlide><img src={chair4} alt="Discount Item" className='img-fluid bg-6 p-5' />
+                <div className="row">
+                  <div className="col-md-9">
+                    <h5 className='text-center'>Mini LCW Chair</h5>
+                    <p className='text-center'>$56.00</p>
+                  </div>
+                </div>
+              </SwiperSlide>
+            </Swiper>
+          </div>
+        </div>
+      </section>
+
+
+      <section className='bg-7'>
+        <div className="container">
+          <div className="row align-items-center">
+            <div className="col-md-12 text-center ">
+              <h1 className='main-content '>Get Leatest Update By Subscribe</h1>
+              <h1 className='main-content '>0ur Newslater</h1>
+              <button className='btn btn-danger '>Shop Now</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div className="container">
+          <div className="row">
+            <div className="col-md-12 text-center">
+              <img src={img55} className='img-fluid' alt="img55" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div className="container">
+          <div className="row">
+            <h1 className='text-center main-content mt-5 mb-5'>Leatest Blog</h1>
+            <div className="col-md-4">
+              <div className="card" style={{ width: "18rem" }}>
+                <img src={card10} className="card-img-top" alt="card10" />
+                <div className="card-body">
+                  <h5 className="card-title main-content">Saber Ali</h5>
+                  <h5 className='main-content'>Top esssential Trends in 2021</h5>
+                  <p className="card-text">
+                    More off this less hello samlande lied much
+                    over tightly circa horse taped mightly.
+                  </p>
+                </div>
+                <div className="card-body">
+                  <a href="/" className="card-link">
+                    Read More
+                  </a>
+                </div>
+              </div>
+
+            </div>
+            <div className="col-md-4">
+              <div className="card" style={{ width: "18rem" }}>
+                <img src={card11} className="card-img-top" alt="card11" />
+                <div className="card-body">
+                  <h5 className="card-title">Saber Ali</h5>
+                  <h5 className='text-1'>Top esssential Trends in 2021</h5>
+                  <p className="card-text">
+                    More off this less hello samlande lied much
+                    over tightly circa horse taped mightly.
+                  </p>
+                </div>
+                <div className="card-body">
+                  <a href="/" className="card-link text-1">
+                    Read More
+                  </a>
+                </div>
+              </div>
+
+            </div>
+            <div className="col-md-4">
+              <div className="card" style={{ width: "18rem" }}>
+                <img src={card12} className="card-img-top" alt="card12" />
+                <div className="card-body">
+                  <h5 className="card-title main-content">Saber Ali</h5>
+                  <h5 className='main-content'>Top esssential Trends in 2021</h5>
+                  <p className="card-text">
+                    More off this less hello samlande lied much
+                    over tightly circa horse taped mightly.
+                  </p>
+                </div>
+                <div className="card-body">
+                  <a href="/" className="card-link">
+                    Read More
+                  </a>
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+        </div>
+      </section>
     </>
   )
 }
 export default App
+
+
