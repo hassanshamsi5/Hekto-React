@@ -21,7 +21,7 @@ function App() {
             <section>
                 <div className="container main-content mt-5">
                     <div className="row ">
-                        <div className="col-md-3 offset-1" >
+                        <div className="col-md-3 offset-1">
                             <svg xmlns="http://www.w3.org/2000/svg" width="94" height="94" viewBox="0 0 94 94" fill="none">
                                 <g clip-path="url(#clip0_108_8906)">
                                     <path d="M94 47C94 46.429 93.9897 45.8602 93.9697 45.2942C93.0717 20.127 72.3864 0 47 0C21.6136 0 0.92825 20.127 0.0304766 45.2942C0.0102812 45.8602 0 46.429 0 47C0 72.9574 24.1429 92.2944 47 92.2944C70.2712 92.2944 94 72.9574 94 47Z" fill="#395093" />
@@ -48,7 +48,7 @@ function App() {
                             </svg>
                         </div>
                         <div className="col-md-9 text-center">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="48" height="39" viewBox="0 0 48 39" fill="style={{fill: '#FFF'}}">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="48" height="39" viewBox="0 0 48 39" fill="none">
                                 <path d="M1.31099 26.5001L14.311 37.5001C15.7293 38.7002 17.235 37.0001 17.8105 36L22.3105 30C21.8105 30.1667 22.8105 28.2 30.8105 19C40.8105 7.5 41.8105 9 46.8105 6C48.0105 2 44.9772 1 43.3105 1C42.6439 1.33333 40.8105 2.3 38.8105 3.5C33.6105 6.7 25.6439 15.1667 22.3105 19L14.311 29C13.4775 28.1667 10.6106 25.5001 5.81099 21.5001C0.610994 20.7001 0.644327 24.5001 1.31099 26.5001Z" fill="#FF1788" stroke="#FF1788" />
                             </svg>
                             <h2>Your Order Is Completed! </h2>
