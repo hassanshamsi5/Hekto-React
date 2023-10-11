@@ -20,8 +20,8 @@ function App() {
 
             <section>
                 <div className="container main-content mt-5">
-                    <div className="row justify-content-center">
-                        <div className="col-md-5">
+                    <div className="row">
+                        <div className="col-md-8">
                             <h4 className='mb-5'>Generel Information</h4>
                             <h5>Eu dictumst cum at sed euismood condimentum?</h5>
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tincidunt sed tristique mollis vitae, consequat gravida sagittis.</p>

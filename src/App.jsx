@@ -7,6 +7,11 @@ import Aboutus from './Component/About us/about'
 import ContactUs from './Component/Contact us/contact'
 import MyAccount from './Component/MyAccount/account'
 import OrderCompelete from './Component/OrderCompelete/order'
+import SingleBlog from './Component/Single Blog/single.blog'
+import BlogPage from './Component/BlogPage/blog'
+import Demo from './Component/Demo/demo'
+import ShoppingCArt from './Component/Shopping Cart/shoping'
+import ProductDetail from './Component/Product Detail/product'
 
 function App() {
   return (
@@ -18,7 +23,12 @@ function App() {
         {/* <Faq/> */}
         {/* <Aboutus /> */}
         {/* <ContactUs/> */}
-        <OrderCompelete/>
+        {/* <OrderCompelete/> */}
+        {/* <SingleBlog/> */}
+        {/* <BlogPage /> */}
+        {/* <Demo /> */}
+        {/* <ShoppingCArt/> */}
+        <ProductDetail/>
         {/* <MyAccount/> */}
         <Footer />
       </div>
