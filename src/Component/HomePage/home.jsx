@@ -1,4 +1,4 @@
-import sofa from '../../Images/2.png'
+// import sofa from '../../Images/2.png'
 import chair1 from '../../Images/Untitled-2.png'
 import chair2 from '../../Images/Untitled-3.png'
 import chair3 from '../../Images/Untitled-4.png'

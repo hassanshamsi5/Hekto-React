@@ -24,14 +24,14 @@ function App() {
                         <div className="col-md-4 text-center shadow p-5">
                             <h4>Login</h4>
                             <p>Please login using account detail bellow.</p>
-                            <div class="form-group mt-5">
-                                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Email Address" />
+                            <div className="form-group mt-5">
+                                <input type="email" className="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Email Address" />
                             </div>
-                            <div class="form-group mt-5">
-                                <input type="Password" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Password" />
+                            <div className="form-group mt-5">
+                                <input type="Password" className="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Password" />
                             </div>
-                            <div class="form-group mt-5">
-                                <input type="Password" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Forgot your password?" />
+                            <div className="form-group mt-5">
+                                <input type="Password" className="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Forgot your password?" />
                             </div>
                             <button className='btntheme w-100 mt-3'>Sign In</button>
                             <p className='mt-3'>Don’t have an Account?Create account</p>

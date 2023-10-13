@@ -5,10 +5,10 @@ function App() {
     return (
         <>
             <div className='bg'>
-                <div class="container text-white">
-                    <header class="d-flex flex-wrap">
-                        <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none ">
-                            <svg class="bi" width="10" height="32"><use xlink href="#bootstrap"></use></svg>
+                <div className="container text-white">
+                    <header className="d-flex flex-wrap">
+                        <a href="/" className="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none ">
+                            <svg className="bi" width="10" height="32"><use xlink href="#bootstrap"></use></svg>
                             <a className="navbar-brand" href="/"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi bi-envelope" viewBox="0 0 16 16">
                                 <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4Zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2Zm13 2.383-4.708 2.825L15 11.105V5.383Zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741ZM1 11.105l4.708-2.897L1 5.383v5.722Z" />
                             </svg>mhhasanul@gmail.com</a>
