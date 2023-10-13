@@ -78,12 +78,12 @@ function App() {
 
       <section>
         <div className="container ">
-          <div className="row align-items-center my-5">
+          <div className="row align-items-center mt-5">
             <h3 className='text-center main-content'>Featured Products</h3>
             <div className="col-md-3  text-center align-items-normal">
               <div className="shadow border-0">
                 <img src={chair1} className='img-fluid bg-1 p-2' alt="chair1" />
-                <div className='hov p-1'>
+                <div className='hov p-1'> 
                   <h6 className='text-1'>Cantilever chair</h6>
                   <div className="row">
                     <div className="col-12 text-center">
