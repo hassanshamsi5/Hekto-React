@@ -57,6 +57,7 @@ function App() {
             <Swiper
               spaceBetween={50}
               slidesPerView={1}
+              dots={3}
               onSlideChange={() => console.log('slide change')}
               onSwiper={(swiper) => console.log(swiper)}
             >
