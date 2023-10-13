@@ -19,8 +19,8 @@ function App() {
             </section>
 
             <section>
-                <div className="container main-content mt-5 ">
-                    <div className="row justify-content-center">
+                <div className="container main-content ">
+                    <div className="row justify-content-center mt-5">
                         <div className="col-md-4 text-center shadow p-5">
                             <h4>Login</h4>
                             <p>Please login using account detail bellow.</p>
@@ -44,7 +44,7 @@ function App() {
 
             <section>
                 <div className="container">
-                    <div className="row">
+                    <div className="row mt-5">
                         <div className="col-md-12 text-center">
                             <img src={img55} className='img-fluid' alt="img55" />
                         </div>
