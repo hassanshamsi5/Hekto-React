@@ -21,7 +21,7 @@ function App() {
             <section>
                 <div className="container main-content mt-5">
                     <div className="row">
-                        <div className="col-md-5">
+                        <div className="col-md-6">
                             <h4 className='mb-5'>Information About us</h4>
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mattis neque ultrices mattis aliquam, malesuada diam est. Malesuada sem tristique amet erat vitae eget dolor lobortis. Accumsan faucibus vitae lobortis quis bibendum quam.</p>
                             <svg xmlns="http://www.w3.org/2000/svg" width="103" height="25" viewBox="0 0 103 25" fill="none">

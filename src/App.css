@@ -1,9 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@600&display=swap');
 
-.bg {
+/* .bg {
   background: rgba(126, 51, 224, 1);
+} */
+.bg {
+  background: rgb(200 158 255);
 }
-
 /* a,
 .nav {
   color: white;

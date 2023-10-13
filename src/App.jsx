@@ -30,6 +30,9 @@ function App() {
             <Route path="/myAccount" element={<MyAccount />} />
             <Route path="/blog" element={<BlogPage />} />
             <Route path="/product" element={<ProductDetail />} />
+            <Route path="/shoplist" element={<Shoplist />} />
+            <Route path="/about" element={<Aboutus />} />
+            <Route path="/shopingcart" element={<ShoppingCArt />} />
             {/* <Faq/> */}
             {/* <Aboutus /> */}
             {/* <OrderCompelete/> */}

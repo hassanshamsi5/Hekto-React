@@ -33,9 +33,9 @@ function App() {
                                 </svg></a>
                             </li>
                             <li className="nav-item">
-                                <a className="nav-link" href="/"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi bi-cart" viewBox="0 0 16 16">
+                                <Link className="nav-link" to="/shopingcart"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi bi-cart" viewBox="0 0 16 16">
                                     <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z" />
-                                </svg></a>
+                                </svg></Link>
                             </li>
                         </ul>
                     </header>
@@ -54,7 +54,7 @@ function App() {
                                 <a className="nav-link text-1" aria-current="page" href="/">Home</a>
                             </li>
                             <li className="nav-item">
-                                <a className="nav-link" href="/">Pages</a>
+                                <Link className="nav-link" to="/about">About</Link>
                             </li>
                             <li className="nav-item">
                                 <Link className="nav-link" to="/product">Products</Link>
@@ -63,7 +63,7 @@ function App() {
                                 <Link className="nav-link" to="/blog">Blog </Link>
                             </li>
                             <li className="nav-item">
-                                <a className="nav-link" href="/">Shop</a>
+                                <Link className="nav-link" to="/shoplist">Shop</Link>
                             </li>
                             <li className="nav-item">
                                 <Link className="nav-link" to="/contact">Contact</Link>
