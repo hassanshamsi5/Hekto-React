@@ -1,5 +1,4 @@
 import '../../App.css'
-import img55 from '../../Images/55.png'
 import contactus from '../../Images/contactus.png'
 
 function App() {
@@ -21,7 +20,7 @@ function App() {
 
             <section>
                 <div className="container main-content mt-5">
-                    <div className="row justify-content-center">
+                    <div className="row">
                         <div className="col-md-5">
                             <h4 className='mb-5'>Information About us</h4>
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mattis neque ultrices mattis aliquam, malesuada diam est. Malesuada sem tristique amet erat vitae eget dolor lobortis. Accumsan faucibus vitae lobortis quis bibendum quam.</p>

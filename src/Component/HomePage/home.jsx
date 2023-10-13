@@ -25,6 +25,11 @@ import card11 from '../../Images/card11.png'
 import card12 from '../../Images/card12.png'
 import DiscountItem from '../../Images/Group 154.png'
 import img55 from '../../Images/55.png'
+import banner1 from '../../Images/first-banner.png'
+import banner2 from '../../Images/second-banner.png'
+import banner3 from '../../Images/third-banner.png'
+
+// import b1 from '../../Images/1.png'
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import '../../App.css';
@@ -33,10 +38,12 @@ function App() {
   return (
     <>
       <section>
-        <div className="conatainer home-1">
-          <div className="row align-items-center bg-image-1">
-            <div className="col-md-2"></div>
-            <div className="col-md-4">
+        <div className="container-fluid">
+          <div className="row align-items-center">
+            {/* <div className="col-md-3 col-3">
+              <img src={b1} className='img-fluid' alt="b1" />
+            </div>
+            <div className="col-md-4 col-7">
               <h6 className='text-1'>Best Furniture For Your Castle....</h6>
               <h1 className='main-content-1'>New Furniture Collection
                 Trends in 2020</h1>
@@ -44,9 +51,25 @@ function App() {
                 in phasellus non in justo.</p>
               <button className='btn btn-danger main-content-1'>Shop Now</button>
             </div>
-            <div className="col-md-4">
+            <div className="col-md-4 col-8">
               <img src={sofa} className='img-fluid' alt="sofa" />
-            </div>
+            </div> */}
+            <Swiper
+              spaceBetween={50}
+              slidesPerView={1}
+              onSlideChange={() => console.log('slide change')}
+              onSwiper={(swiper) => console.log(swiper)}
+            >
+              <SwiperSlide>
+                <img src={banner1} alt="Discount Item" className='img-fluid ' />
+              </SwiperSlide>
+              <SwiperSlide>
+                <img src={banner2} alt="Discount Item" className='img-fluid ' />
+              </SwiperSlide>
+              <SwiperSlide>
+                <img src={banner3} alt="Discount Item" className='img-fluid ' />
+              </SwiperSlide>
+            </Swiper>
           </div>
         </div>
       </section>
@@ -56,8 +79,7 @@ function App() {
         <div className="container ">
           <div className="row align-items-center my-5">
             <h3 className='text-center main-content'>Featured Products</h3>
-            <div className="col-md-2"></div>
-            <div className="col-md-2 text-center align-items-normal">
+            <div className="col-md-3  text-center align-items-normal">
               <div className="shadow border-0">
                 <img src={chair1} className='img-fluid bg-1 p-2' alt="chair1" />
                 <div className='hov p-1'>
@@ -71,7 +93,7 @@ function App() {
                 </div>
               </div>
             </div>
-            <div className="col-md-2 text-center align-items-normal">
+            <div className="col-md-3  text-center align-items-normal">
               <div className="shadow border-0">
                 <img src={chair2} className='img-fluid bg-1 p-2' alt="chair1" />
                 <div className='hov p-1'>
@@ -85,7 +107,7 @@ function App() {
                 </div>
               </div>
             </div>
-            <div className="col-md-2 text-center align-items-normal">
+            <div className="col-md-3  text-center align-items-normal">
               <div className="shadow border-0">
                 <img src={chair3} className='img-fluid bg-1 p-2' alt="chair1" />
                 <div className='hov p-1'>
@@ -99,7 +121,7 @@ function App() {
                 </div>
               </div>
             </div>
-            <div className="col-md-2 text-center align-items-normal">
+            <div className="col-md-3  text-center align-items-normal">
               <div className="shadow border-0">
                 <img src={chair4} className='img-fluid bg-1 p-2' alt="chair1" />
                 <div className='hov p-1'>
@@ -113,7 +135,6 @@ function App() {
                 </div>
               </div>
             </div>
-            <div className="col-md-2"></div>
           </div>
         </div>
       </section>
@@ -130,51 +151,51 @@ function App() {
                 <span className='mx-3 hov-1'>Special Offer</span>
               </div>
             </div>
-            <div className="col-md-2 "></div>
-            <div className="col-md-3 ">
+
+            <div className="col-md-4 ">
               <img src={chair5} className='img-fluid bg-1 p-5' alt="chair5" />
-              <div className='d-flex justify-content-between main-content'>
+              <div className='d-flex  main-content'>
                 <p>Comfort Handy Craft</p>
                 <p>$42.00</p>
                 <p className='text-1'><del>$65.00</del></p>
               </div>
             </div>
-            <div className="col-md-3">
+            <div className="col-md-4">
               <img src={chair6} className='img-fluid p-5' alt="chair6" />
-              <div className='d-flex justify-content-between main-content'>
+              <div className='d-flex  main-content'>
                 <p>Comfort Handy Craft</p>
                 <p>$42.00</p>
                 <p className='text-1'><del>$65.00</del></p>
               </div>
             </div>
-            <div className="col-md-3 ">
+            <div className="col-md-4 ">
               <img src={chair7} className='img-fluid bg-1 p-5' alt="chair7" />
-              <div className='d-flex justify-content-between main-content'>
+              <div className='d-flex  main-content'>
                 <p>Comfort Handy Craft</p>
                 <p>$42.00</p>
                 <p className='text-1'><del>$65.00</del></p>
               </div>
             </div>
-            <div className="col-md-2 "></div>
-            <div className="col-md-3 ">
+
+            <div className="col-md-4 ">
               <img src={chair8} className='img-fluid bg-1 p-5' alt="chair8" />
-              <div className='d-flex justify-content-between main-content'>
+              <div className='d-flex  main-content'>
                 <p>Comfort Handy Craft</p>
                 <p>$42.00</p>
                 <p className='text-1'><del>$65.00</del></p>
               </div>
             </div>
-            <div className="col-md-3 ">
+            <div className="col-md-4 ">
               <img src={chair9} className='img-fluid bg-1 p-5' alt="chair9" />
-              <div className='d-flex justify-content-between main-content'>
+              <div className='d-flex  main-content'>
                 <p>Comfort Handy Craft</p>
                 <p>$42.00</p>
                 <p className='text-1'><del>$65.00</del></p>
               </div>
             </div>
-            <div className="col-md-3 ">
+            <div className="col-md-4 ">
               <img src={chair10} className='img-fluid bg-1 p-5' alt="chair10" />
-              <div className='d-flex justify-content-between main-content'>
+              <div className='d-flex  main-content'>
                 <p>Comfort Handy Craft</p>
                 <p>$42.00</p>
                 <p className='text-1'><del>$65.00</del></p>
@@ -186,27 +207,26 @@ function App() {
 
       <section>
         <div className="container">
-          <div className="row">
+          <div className="row mt-5">
             <div className="col-md-12 text-center main-content mt-5">
               <h1>What Shopex Offer!</h1>
             </div>
-            <div className="col-md-2"></div>
-            <div className="col-md-2 shadow p-4 text-center g-2">
+            <div className="col-md-3 shaqwdow p-4 text-center g-2">
               <img src={card1} className='img-fluid' alt="card1" />
               <h3>24/7 Support</h3>
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Massa purus gravida.</p>
             </div>
-            <div className="col-md-2 shadow p-4 text-center g-2">
+            <div className="col-md-3 shaqwdow p-4 text-center g-2">
               <img src={card2} className='img-fluid' alt="card1" />
               <h3>24/7 Support</h3>
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Massa purus gravida.</p>
             </div>
-            <div className="col-md-2 shadow p-4 text-center g-2">
+            <div className="col-md-3 shaqwdow p-4 text-center g-2">
               <img src={card3} className='img-fluid' alt="card1" />
               <h3>24/7 Support</h3>
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Massa purus gravida.</p>
             </div>
-            <div className="col-md-2 shadow p-4 text-center g-2">
+            <div className="col-md-3 shaqwdow p-4 text-center g-2">
               <img src={card4} className='img-fluid' alt="card1" />
               <h3>24/7 Support</h3>
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Massa purus gravida.</p>
@@ -217,7 +237,7 @@ function App() {
       </section>
       <section className='bg-2'>
         <div className="container-fluid">
-          <div className="row align-items-center">
+          <div className="row align-items-center mt-5">
             <div className="col-md-6">
               <img src={unifeat} className='img-fluid' alt="unifeat" />
             </div>
@@ -230,7 +250,7 @@ function App() {
                   blocks and machine nails</li>
                 <li className='cal-2'>Arms, backs and seats are structurally reinforced</li>
               </ul>
-              <button className='btn btn-danger'>Add To Cart</button>
+              <button className='btntheme'>Add To Cart</button>
               <span className='mx-4 main-content'>B&B Italian Sofa $32.00</span>
             </div>
           </div>
@@ -240,10 +260,9 @@ function App() {
 
       <section>
         <div className="container ">
-          <div className="row align-items-center my-5">
-            <h3 className='text-center main-content'>Trending Products</h3>
-            <div className="col-md-2"></div>
-            <div className="col-md-2 text-center align-items-normal">
+          <div className="row align-items-center mt-5">
+            <h2 className='text-center main-content fw-bold '>Trending Products</h2>
+            <div className="col-md-3 text-center align-items-normal">
               <div className="shadow border-0">
                 <img src={chair1} className='img-fluid bg-1 p-2' alt="chair1" />
                 <div className='hov p-1'>
@@ -258,7 +277,7 @@ function App() {
                 </div>
               </div>
             </div>
-            <div className="col-md-2 text-center align-items-normal">
+            <div className="col-md-3 text-center align-items-normal">
               <div className="shadow border-0">
                 <img src={chair2} className='img-fluid bg-1 p-2' alt="chair1" />
                 <div className='hov p-1'>
@@ -273,7 +292,7 @@ function App() {
                 </div>
               </div>
             </div>
-            <div className="col-md-2 text-center align-items-normal">
+            <div className="col-md-3 text-center align-items-normal">
               <div className="shadow border-0">
                 <img src={chair3} className='img-fluid bg-1 p-2' alt="chair1" />
                 <div className='hov p-1'>
@@ -288,7 +307,7 @@ function App() {
                 </div>
               </div>
             </div>
-            <div className="col-md-2 text-center align-items-normal">
+            <div className="col-md-3 text-center align-items-normal">
               <div className="shadow border-0">
                 <img src={chair4} className='img-fluid bg-1 p-2' alt="chair1" />
                 <div className='hov p-1'>
@@ -303,42 +322,40 @@ function App() {
                 </div>
               </div>
             </div>
-            <div className="col-md-2"></div>
           </div>
         </div>
       </section>
 
       <section>
         <div className="container main-content">
-          <div className="row justify-content-center">
-            {/* <div className="col-md-2"></div> */}
-            <div className="col-md-3 bg-3 ">
+          <div className="row justify-content-center mt-5">
+            <div className="col-md-4 bg-3 ">
               <h5>23% off in all products</h5>
               <a href="/">Shop Now</a>
               <img src={card5} className='img-fluid' alt="card5" />
             </div>
-            <div className="col-md-3 bg-2">
+            <div className="col-md-4 bg-2">
               <h5>23% off in all products</h5>
               <a href="/">View Collection</a>
               <img src={card6} className='img-fluid' alt="card6" />
             </div>
-            <div className="col-md-3">
+            <div className="col-md-4">
               <div className="row align-items-center g-3">
-                <div className="col-md-5 col-5">
+                <div className="col-md-6 col-6">
                   <img src={card9} className='img-fluid bg-1' alt="card7" />
                 </div>
-                <div className="col-md-7 col-7 mb-2">
+                <div className="col-md-6 col-6  mb-2">
                   Executive Seat chair <del>$32.00</del>
                 </div>
-                <div className="col-md-5">
+                <div className="col-md-6 col-6">
                   <img src={card7} className='img-fluid bg-1' alt="card7" />
                 </div>
-                <div className="col-md-7">
+                <div className="col-md-6 col-6">
                   Executive Seat chair <del>$32.00</del>
-                </div>  <div className="col-md-5">
+                </div>  <div className="col-md-6 col-6">
                   <img src={card8} className='img-fluid bg-1' alt="card7" />
                 </div>
-                <div className="col-md-7">
+                <div className="col-md-6 col-6">
                   Executive Seat chair <del>$32.00</del>
                 </div>
               </div>
@@ -388,7 +405,7 @@ function App() {
                   <span className='text-4'>Material expose like metals</span>
                 </div>
               </div>
-              <button className='btn btn-danger'>Shop Now</button>
+              <button className='btntheme'>Shop Now</button>
             </div>
 
             <div className="col-md-6">
@@ -485,7 +502,7 @@ function App() {
             <div className="col-md-12 text-center ">
               <h1 className='main-content '>Get Leatest Update By Subscribe</h1>
               <h1 className='main-content '>0ur Newslater</h1>
-              <button className='btn btn-danger '>Shop Now</button>
+              <button className='btntheme '>Shop Now</button>
             </div>
           </div>
         </div>
@@ -493,7 +510,7 @@ function App() {
 
       <section>
         <div className="container">
-          <div className="row">
+          <div className="row mt-5">
             <div className="col-md-12 text-center">
               <img src={img55} className='img-fluid' alt="img55" />
             </div>

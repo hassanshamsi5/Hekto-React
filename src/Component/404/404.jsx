@@ -1,6 +1,7 @@
 import '../../App.css'
 import img55 from '../../Images/55.png'
 import Error from '../../Images/error404.png'
+import { Link } from 'react-router-dom';
 
 function App() {
 
@@ -25,7 +26,8 @@ function App() {
                         <div className="col-md-12 text-center">
                             <img src={Error} className='img-fluid' alt="404" />
                             <br />
-                            <button className='btntheme'>Back To Home</button>
+                            {/* <button className='btntheme'>Back To Home</button> */}
+                            <Link className='btntheme' to="/">Back to Home</Link>
                             {/* <button className='btn btn-danger'>Back To Home</button> */}
 
                         </div>

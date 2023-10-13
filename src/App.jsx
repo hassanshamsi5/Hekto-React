@@ -12,25 +12,38 @@ import BlogPage from './Component/BlogPage/blog'
 import Demo from './Component/Demo/demo'
 import ShoppingCArt from './Component/Shopping Cart/shoping'
 import ProductDetail from './Component/Product Detail/product'
+import ShopLeftSidebar from './Component/Shop left sidebar/shopleft'
+import ShopGridDef from './Component/Shop Grid Default/shopgrid'
+import Shoplist from './Component/ShopList/shoplist'
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 
 function App() {
   return (
     <>
       <div>
-        <Navbar />
-        {/* <Home /> */}
-        {/* <Error404/> */}
-        {/* <Faq/> */}
-        {/* <Aboutus /> */}
-        {/* <ContactUs/> */}
-        {/* <OrderCompelete/> */}
-        {/* <SingleBlog/> */}
-        {/* <BlogPage /> */}
-        {/* <Demo /> */}
-        {/* <ShoppingCArt/> */}
-        <ProductDetail/>
-        {/* <MyAccount/> */}
-        <Footer />
+        <BrowserRouter>
+          <Navbar />
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="*" element={<Error404 />} />
+            <Route path="/contact" element={<ContactUs />} />
+            <Route path="/myAccount" element={<MyAccount />} />
+            <Route path="/blog" element={<BlogPage />} />
+            <Route path="/product" element={<ProductDetail />} />
+            {/* <Faq/> */}
+            {/* <Aboutus /> */}
+            {/* <OrderCompelete/> */}
+            {/* <SingleBlog/> */}
+            {/* <Demo /> */}
+            {/* <ShoppingCArt/> */}
+            {/* <ProductDetail/> */}
+            {/* <ShopLeftSidebar /> */}
+            {/* <ShopGridDef /> */}
+            {/* <Shoplist /> */}
+          </Routes>
+          <Footer />
+        </BrowserRouter>
+
       </div>
     </>
   )

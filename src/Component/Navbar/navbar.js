@@ -1,4 +1,6 @@
 import '../../App.css';
+import { Link } from 'react-router-dom';
+
 function App() {
     return (
         <>
@@ -23,7 +25,7 @@ function App() {
                                 <a className="nav-link" href="/">USD</a>
                             </li>
                             <li className="nav-item">
-                                <a className="nav-link" href="/">Login</a>
+                                <Link className="nav-link" to="/myAccount">Login</Link>
                             </li>
                             <li className="nav-item">
                                 <a className="nav-link" href="/">Wishlist<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi bi-heart" viewBox="0 0 16 16">
@@ -55,16 +57,16 @@ function App() {
                                 <a className="nav-link" href="/">Pages</a>
                             </li>
                             <li className="nav-item">
-                                <a className="nav-link" href="/">Products</a>
+                                <Link className="nav-link" to="/product">Products</Link>
                             </li>
                             <li className="nav-item">
-                                <a className="nav-link" href="/">Blog </a>
+                                <Link className="nav-link" to="/blog">Blog </Link>
                             </li>
                             <li className="nav-item">
                                 <a className="nav-link" href="/">Shop</a>
                             </li>
                             <li className="nav-item">
-                                <a className="nav-link" href="/">Contact</a>
+                                <Link className="nav-link" to="/contact">Contact</Link>
                             </li>
                             <form className="d-flex" role="search">
                                 <input className="form-control border-none" type="search" aria-label="Search" />
