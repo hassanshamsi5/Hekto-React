@@ -35,17 +35,17 @@ function App() {
                             <h4>Get In Touch</h4>
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mattis neque ultrices  tristique amet erat vitae eget dolor los vitae lobortis quis bibendum quam.</p>
                             <form>
-                                <div class="row">
-                                    <div class="col">
-                                        <input type="text" class="form-control" placeholder="Your Name*" />
+                                <div className="row">
+                                    <div className="col">
+                                        <input type="text" className="form-control" placeholder="Your Name*" />
                                     </div>
-                                    <div class="col">
-                                        <input type="text" class="form-control" placeholder="Your E-mail" />
+                                    <div className="col">
+                                        <input type="text" className="form-control" placeholder="Your E-mail" />
                                     </div>
-                                    <div class="col-12">
-                                        <input type="text" class="form-control mt-3" placeholder="Subject*" />
+                                    <div className="col-12">
+                                        <input type="text" className="form-control mt-3" placeholder="Subject*" />
                                     </div>
-                                    <div class="form-group mt-3">
+                                    <div className="form-group mt-3">
                                         <textarea class="form-control" id="exampleFormControlTextarea1" rows="6" placeholder='Type Your Messege*'></textarea>
                                     </div>
 

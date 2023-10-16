@@ -26,7 +26,7 @@ function App() {
 
             <section>
                 <div className="container main-content">
-                    <div className="row justify-content-center align-items-center">
+                    <div className="row justify-content-center align-items-center mt-5">
                         <div className="col-md-6">
                             <img src={Aboutus} className='img-fluid' alt="Aboutus" />
                         </div>
@@ -42,26 +42,26 @@ function App() {
 
             <section>
                 <div className="container">
-                    <div className="row justify-content-center">
+                    <div className="row g-5 mt-5">
                         <div className="col-md-12 text-center main-content mt-5">
                             <h1>Our Features</h1>
                         </div>
-                        <div className="col-md-2 shadow p-4 text-center g-2">
+                        <div className="col-md-3 shadow p-4 text-center g-2">
                             <img src={card1} className='img-fluid' alt="card1" />
                             <h3>Free Delivery</h3>
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Massa purus gravida.</p>
                         </div>
-                        <div className="col-md-2 shadow p-4 text-center g-2">
+                        <div className="col-md-3 shadow p-4 text-center g-2">
                             <img src={card2} className='img-fluid' alt="card1" />
                             <h3>100% Cash Back</h3>
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Massa purus gravida.</p>
                         </div>
-                        <div className="col-md-2 shadow p-4 text-center g-2">
+                        <div className="col-md-3 shadow p-4 text-center g-2">
                             <img src={card3} className='img-fluid' alt="card1" />
                             <h3>Quality Product</h3>
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Massa purus gravida.</p>
                         </div>
-                        <div className="col-md-2 shadow p-4 text-center g-2">
+                        <div className="col-md-3 shadow p-4 text-center g-2">
                             <img src={card4} className='img-fluid' alt="card1" />
                             <h3>24/7 Support</h3>
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Massa purus gravida.</p>
@@ -69,7 +69,7 @@ function App() {
                     </div>
                 </div>
             </section>
-
+            <div className="mt-5"></div>
 
             <section className='bg-21 p-4'>
                 <div className="container main-content text-center mt-5">
@@ -118,7 +118,7 @@ function App() {
                                     </div>
                                 </div>
                             </SwiperSlide>
-                            
+
                         </Swiper>
                     </div>
                 </div>

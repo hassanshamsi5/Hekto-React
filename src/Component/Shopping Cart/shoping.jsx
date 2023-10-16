@@ -187,15 +187,15 @@ function App() {
 
                                 <div class="custom-control custom-checkbox my-3 mr-sm-2">
                                     <input type="checkbox" class="custom-control-input bg-00" id="customControlInline" />
-                                    <label class="custom-control-label" for="customControlInline">Shipping & taxes calculated at checkout</label>
+                                    <label className="custom-control-label" for="customControlInline">Shipping & taxes calculated at checkout</label>
                                 </div>
                                 <button className='btntheme2'>Proceed To Checkout</button>
                             </div>
                             <h3 className='text-center mt-5'>Calculate Shopping</h3>
                             <div className="row  main-content faq p-4 mt-3">
-                                <input type="text" class="form-control field mt-4" id="exampleFormControlInput1" placeholder="Pakistan" />
-                                <input type="text" class="form-control field mt-4" id="exampleFormControlInput1" placeholder="Karachi" />
-                                <input type="text" class="form-control field mt-4" id="exampleFormControlInput1" placeholder="Postal Code" />
+                                <input type="text" className="form-control field mt-4" id="exampleFormControlInput1" placeholder="Pakistan" />
+                                <input type="text" className="form-control field mt-4" id="exampleFormControlInput1" placeholder="Karachi" />
+                                <input type="text" className="form-control field mt-4" id="exampleFormControlInput1" placeholder="Postal Code" />
                                 <button className='btntheme w-50 mt-4'>Calculate Shiping</button>
                             </div>
                         </div>

@@ -77,7 +77,7 @@ function App() {
 
       <section>
         <div className="container ">
-          <div className="row align-items-center g-5">
+          <div className="row align-items-center g-5 mt-5">
             <h2 className='text-center main-content fw-bold '>Featured Products</h2>
             <div className="col-md-3  text-center align-items-normal">
               <div className="shadow border-0">
@@ -141,7 +141,7 @@ function App() {
 
       <section>
         <div className="container">
-          <div className="row justify-content-center ">
+          <div className="row justify-content-center mt-5 g-2">
             <div className="col-md-12">
               <h1 className='main-content text-center my-4'>Leatest Products</h1>
               <div className="text-center main-content my-4">
@@ -451,11 +451,12 @@ function App() {
 
       <section>
         <div className="container main-content">
-          <div className="row">
+          <div className="row mt-5">
             <h1 className='main-content text-center'>Top Categories</h1>
             <Swiper
               spaceBetween={50}
               slidesPerView={3}
+
               breakpoints={{
                 0: {
                   slidesPerView: 1,
@@ -470,14 +471,17 @@ function App() {
               onSlideChange={() => console.log('slide change')}
               onSwiper={(swiper) => console.log(swiper, "swiper--->")}
             >
-              <SwiperSlide><img src={chair1} alt="Discount Item" className='img-fluid bg-6 p-5' />
-                <div className="row">
-                  <div className="col-md-9 col-10">
-                    <h5 className='text-center'>Mini LCW Chair</h5>
-                    <p className='text-center'>$56.00</p>
+              <div className="col-md-6">
+
+                <SwiperSlide><img src={chair1} alt="Discount Item" className='img-fluid bg-6 p-5' />
+                  <div className="row">
+                    <div className="col-md-9 col-10">
+                      <h5 className='text-center'>Mini LCW Chair</h5>
+                      <p className='text-center'>$56.00</p>
+                    </div>
                   </div>
-                </div>
-              </SwiperSlide>
+                </SwiperSlide>
+              </div>
               <SwiperSlide><img src={chair2} alt="Discount Item" className='img-fluid bg-6 p-5' />
                 <div className="row">
                   <div className="col-md-9 col-10">
@@ -540,14 +544,11 @@ function App() {
       </section>
 
 
-      <section className='bg-7'>
+      <section className=''>
         <div className="container-fluid">
-          <div className="row align-items-center">
+          <div className="row align-items-center mt-5">
             <div className="col-md-12 text-center ">
               <img src={bg11} className='img-fluid' alt="bg11" />
-              {/* <h1 className='main-content '>Get Leatest Update By Subscribe</h1>
-              <h1 className='main-content '>0ur Newslater</h1>
-              <button className='btntheme '>Shop Now</button> */}
             </div>
           </div>
         </div>
@@ -562,10 +563,10 @@ function App() {
           </div>
         </div>
       </section>
-       
+
       <section>
         <div className="container">
-          <div className="row g-5">
+          <div className="row g-5 mt-5">
             <h1 className='text-center main-content mt-5 mb-5'>Leatest Blog</h1>
             <div className="col-md-4">
               <div className="card">
@@ -627,18 +628,7 @@ function App() {
 
           </div>
         </div>
-      </section> 
-
-      {/* <div class="col">
-        <div class="card">
-          <svg class="bd-placeholder-img card-img-top" width="100%" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Image cap" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#868e96"></rect><text x="50%" y="50%" fill="#dee2e6" dy=".3em">Image cap</text></svg>
-
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-          </div>
-        </div>
-      </div> */}
+      </section>
     </>
   )
 }

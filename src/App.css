@@ -132,8 +132,9 @@ p {
 }
 
 .bg-0 {
-  background: rgba(238, 239, 251, 1);
-  
+  background: rgba(238, 239, 251, 1);.footer12{
+    background: #E7E4F8;
+  }
 }
 
 .shaqwdow {
@@ -331,5 +332,7 @@ p {
 .control__btn {
   border: none;
 }
-
+.footer12{
+  background: #E7E4F8;
+}
 

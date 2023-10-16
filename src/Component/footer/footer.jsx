@@ -2,6 +2,7 @@ import '../../App.css';
 import fb from '../../Images/fb.png'
 import insta from '../../Images/insta.png'
 import twitter from '../../Images/twitter.png'
+import { Link } from 'react-router-dom';
 
 function App() {
     return (
@@ -32,18 +33,16 @@ function App() {
                                     <li className="nav-item mb-2"><a href="/" className="nav-link p-0 ">Waterproof Headphones</a></li>
                                 </ul>
                             </div>
-
                             <div className="col-6 col-md-2 mb-3">
                                 <h5>Customer Care</h5>
                                 <ul className="nav flex-column">
-                                    <li className="nav-item mb-2"><a href="/" className="nav-link p-0 ">My Account</a></li>
+                                    <li className="nav-item mb-2"><Link to="../MyAccount    " className="nav-link p-0 ">My Account</Link></li>
                                     <li className="nav-item mb-2"><a href="/" className="nav-link p-0 ">Discount</a></li>
                                     <li className="nav-item mb-2"><a href="/" className="nav-link p-0 ">Returns</a></li>
                                     <li className="nav-item mb-2"><a href="/" className="nav-link p-0 ">Orders History</a></li>
                                     <li className="nav-item mb-2"><a href="/" className="nav-link p-0 ">Order Tracking</a></li>
                                 </ul>
                             </div>
-
                             <div className="col-12 col-md-2 mb-3">
                                 <h5>Pages</h5>
                                 <ul className="nav flex-column">
@@ -53,20 +52,28 @@ function App() {
                                     <li className="nav-item mb-2"><a href="/" className="nav-link p-0 ">Pre-Built Pages</a></li>
                                     <li className="nav-item mb-2"><a href="/" className="nav-link p-0 ">Visual Composer Elements</a></li>
                                     <li className="nav-item mb-2"><a href="/" className="nav-link p-0 ">WooCommerce Pages</a></li>
-
                                 </ul>
                             </div>
                         </div>
-
-                        <div className="d-flex flex-column flex-sm-row justify-content-between  border-top">
-                            <p>©Webecy - All Rights Reserved</p>
-                            <ul className="list-unstyled d-flex">
-                                <li className="ms-3"><img src={fb} className='img-fluid' alt="fb" /></li>
-                                <li className="ms-3"><img src={insta} className='img-fluid' alt="insta" /></li>
-                                <li className="ms-3"><img src={twitter} className='img-fluid' alt="twitter" /></li>
-                            </ul>
-                        </div>
                     </footer>
+                </div>
+            </section>
+
+
+            <section className='footer12'>
+                <div className="container ">
+                    <div className="row">
+                        <div className="col-md-12">
+                            <div className="d-flex flex-column flex-sm-row justify-content-between  border-top ">
+                                <p>©Webecy - All Rights Reserved</p>
+                                <ul className="list-unstyled d-flex">
+                                    <Link to="https://www.facebook.com" target="_blank"> <li className="ms-3"><img src={fb} className='img-fluid' alt="fb" /></li></Link>
+                                    <Link to="https://www.instagram.com" target="_blank"> <li className="ms-3"><img src={insta} className='img-fluid' alt="insta" /></li></Link>
+                                    <Link to="https://www.twitter.com" target="_blank"> <li className="ms-3"><img src={twitter} className='img-fluid' alt="twitter" /></li></Link>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </section>
         </>

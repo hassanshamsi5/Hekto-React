@@ -1,6 +1,6 @@
 import Navbar from './Component/Navbar/navbar'
 import Home from './Component/HomePage/home'
-import Footer from './Component/footer/footer'
+import Footer from './Component/Footer/footer'
 import Faq from './Component/FAQ/faq'
 import Error404 from './Component/404/404'
 import Aboutus from './Component/About us/about'
@@ -49,3 +49,4 @@ function App() {
   )
 }
 export default App
+
