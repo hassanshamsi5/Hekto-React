@@ -81,6 +81,7 @@ p {
 
 .bg-1 {
   background: rgba(246, 247, 251, 1);
+  
 }
 
 .bg-6 {
@@ -103,12 +104,12 @@ p {
   background-image: url(./Images/bg.png);
 }
 
-.bg-7 {
+/* .bg-7 {
   background-image: url(./Images/Rectangle\ 102.png);
   height: 50vh;
   background-repeat: no-repeat;
   padding: 160px;
-}
+} */
 
 .bg-2 {
   background: #F1F0FF;
@@ -132,6 +133,7 @@ p {
 
 .bg-0 {
   background: rgba(238, 239, 251, 1);
+  
 }
 
 .shaqwdow {

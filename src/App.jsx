@@ -34,15 +34,12 @@ function App() {
             <Route path="/about" element={<Aboutus />} />
             <Route path="/shopingcart" element={<ShoppingCArt />} />
             {/* <Faq/> */}
-            {/* <Aboutus /> */}
             {/* <OrderCompelete/> */}
             {/* <SingleBlog/> */}
-            {/* <Demo /> */}
-            {/* <ShoppingCArt/> */}
+            {/* <Demo /> */}  
             {/* <ProductDetail/> */}
             {/* <ShopLeftSidebar /> */}
             {/* <ShopGridDef /> */}
-            {/* <Shoplist /> */}
           </Routes>
           <Footer />
         </BrowserRouter>

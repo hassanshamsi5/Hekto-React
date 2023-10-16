@@ -15,8 +15,8 @@ function App() {
                                     <h2 className='fw-bold'>Hekto</h2>
                                     <div className="d-flex flex-column flex-sm-row w-75">
                                         <label htmlFor="newsletter1" className="visually-hidden">Email address</label>
-                                        <input id="newsletter1" type="text" className="form-control w-50" placeholder="Enter Email Address   " />
-                                        <button className="btntheme" type="button">Sign Up</button>
+                                        <input id="newsletter1" type="text" className="form-control w-75" placeholder="Enter Email Address   " />
+                                        <button className="btntheme w-75" type="button">Sign Up</button>
                                     </div>
                                     <p>Contact Info</p>
                                     <p>17 Princess Road, London, Greater London NW1 8JR, UK</p>
