@@ -471,17 +471,14 @@ function App() {
               onSlideChange={() => console.log('slide change')}
               onSwiper={(swiper) => console.log(swiper, "swiper--->")}
             >
-              <div className="col-md-6">
-
-                <SwiperSlide><img src={chair1} alt="Discount Item" className='img-fluid bg-6 p-5' />
-                  <div className="row">
-                    <div className="col-md-9 col-10">
-                      <h5 className='text-center'>Mini LCW Chair</h5>
-                      <p className='text-center'>$56.00</p>
-                    </div>
+              <SwiperSlide><img src={chair1} alt="Discount Item" className='img-fluid bg-6 p-5' />
+                <div className="row">
+                  <div className="col-md-9 col-10">
+                    <h5 className='text-center'>Mini LCW Chair</h5>
+                    <p className='text-center'>$56.00</p>
                   </div>
-                </SwiperSlide>
-              </div>
+                </div>
+              </SwiperSlide>
               <SwiperSlide><img src={chair2} alt="Discount Item" className='img-fluid bg-6 p-5' />
                 <div className="row">
                   <div className="col-md-9 col-10">
