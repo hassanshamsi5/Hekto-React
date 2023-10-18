@@ -8,7 +8,6 @@ import bag5 from '../../Images/bag1.png'
 import { React, useState } from 'react'
 function App() {
     const [counter, setCounter] = useState(0);
-
     const increase = () => {
         setCounter(count => count + 1);
     }

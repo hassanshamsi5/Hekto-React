@@ -29,49 +29,26 @@ import banner1 from '../../Images/first-banner.png'
 import banner2 from '../../Images/second-banner.png'
 import banner3 from '../../Images/third-banner.png'
 import bg11 from '../../Images/Group 162.png'
-// import b1 from '../../Images/1.png'
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import '../../App.css';
+import { Carousel } from 'antd';
 
 function App() {
   return (
     <>
       <section>
-        <div className="container-fluid">
-          <div className="row align-items-center">
-            {/* <div className="col-md-3 col-3">
-              <img src={b1} className='img-fluid' alt="b1" />
-            </div>
-            <div className="col-md-4 col-7">
-              <h6 className='text-1'>Best Furniture For Your Castle....</h6>
-              <h1 className='main-content-1'>New Furniture Collection
-                Trends in 2020</h1>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Magna in est adipiscing
-                in phasellus non in justo.</p>
-              <button className='btn btn-danger main-content-1'>Shop Now</button>
-            </div>
-            <div className="col-md-4 col-8">
-              <img src={sofa} className='img-fluid' alt="sofa" />
-            </div> */}
-            <Swiper
-              spaceBetween={50}
-              slidesPerView={1}
-              onSlideChange={() => console.log('slide change')}
-              onSwiper={(swiper) => console.log("swiper--->".swiper)}
-            >
-              <SwiperSlide>
-                <img src={banner1} alt="Discount Item" className='img-fluid ' />
-              </SwiperSlide>
-              <SwiperSlide>
-                <img src={banner2} alt="Discount Item" className='img-fluid ' />
-              </SwiperSlide>
-              <SwiperSlide>
-                <img src={banner3} alt="Discount Item" className='img-fluid ' />
-              </SwiperSlide>
-            </Swiper>
+        <Carousel effect="fade" autoplay>
+          <div>
+            <img src={banner1} alt="Discount Item" className='img-fluid ' />
           </div>
-        </div>
+          <div>
+            <img src={banner2} alt="Discount Item" className='img-fluid ' />
+          </div>
+          <div>
+            <img src={banner3} alt="Discount Item" className='img-fluid ' />
+          </div>
+        </Carousel>
       </section>
 
 
@@ -457,6 +434,7 @@ function App() {
               spaceBetween={50}
               slidesPerView={3}
 
+
               breakpoints={{
                 0: {
                   slidesPerView: 1,
@@ -471,7 +449,7 @@ function App() {
               onSlideChange={() => console.log('slide change')}
               onSwiper={(swiper) => console.log(swiper, "swiper--->")}
             >
-              <SwiperSlide><img src={chair1} alt="Discount Item" className='img-fluid bg-6 p-5' />
+              <SwiperSlide><img src={chair1} alt="Discount Item" className='img-fluid bg-6 p-5 ' />
                 <div className="row">
                   <div className="col-md-9 col-10">
                     <h5 className='text-center'>Mini LCW Chair</h5>
@@ -567,7 +545,7 @@ function App() {
             <h1 className='text-center main-content mt-5 mb-5'>Leatest Blog</h1>
             <div className="col-md-4">
               <div className="card">
-                <img src={card10} className="card-img-top" alt="card10" />
+                <img src={card10} className="img-fluid" alt="card10" />
                 <div className="card-body">
                   <h5 className="card-title main-content">Saber Ali</h5>
                   <h5 className='main-content'>Top esssential Trends in 2021</h5>
@@ -586,7 +564,7 @@ function App() {
             </div>
             <div className="col-md-4">
               <div className="card" >
-                <img src={card11} className="card-img-top" alt="card11" />
+                <img src={card11} className="img-fluid" alt="card11" />
                 <div className="card-body">
                   <h5 className="card-title">Saber Ali</h5>
                   <h5 className='text-1'>Top esssential Trends in 2021</h5>
@@ -605,7 +583,7 @@ function App() {
             </div>
             <div className="col-md-4">
               <div className="card">
-                <img src={card12} className="card-img-top" alt="card12" />
+                <img src={card12} className="img-fluid" alt="card12" />
                 <div className="card-body">
                   <h5 className="card-title main-content">Saber Ali</h5>
                   <h5 className='main-content'>Top esssential Trends in 2021</h5>
@@ -620,9 +598,7 @@ function App() {
                   </a>
                 </div>
               </div>
-
             </div>
-
           </div>
         </div>
       </section>

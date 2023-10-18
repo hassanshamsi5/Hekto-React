@@ -36,12 +36,12 @@ function App() {
                                         <span>Log in</span>
                                     </div>
                                 </div>
-                                <div class="mb-3 mt-5">
-                                    <input type="number" class="form-control field" id="exampleFormControlInput1" placeholder="Email or mobile phone number*" />
+                                <div className="mb-3 mt-5">
+                                    <input type="number" className="form-control field" id="exampleFormControlInput1" placeholder="Email or mobile phone number*" />
                                 </div>
-                                <div class="custom-control custom-checkbox my-1 mr-sm-2">
-                                    <input type="checkbox" class="custom-control-input bg-00" id="customControlInline" />
-                                    <label class="custom-control-label" for="customControlInline">Keep me up to date on news and excluive offers</label>
+                                <div className="custom-control custom-checkbox my-1 mr-sm-2">
+                                    <input type="checkbox" className="custom-control-input bg-00" id="customControlInline" />
+                                    <label className="custom-control-label" for="customControlInline">Keep me up to date on news and excluive offers</label>
                                 </div>
                                 <div className="row mt-5">
                                     <h4 className='main-content'>Shipping address</h4>

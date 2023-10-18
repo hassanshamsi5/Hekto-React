@@ -34,14 +34,14 @@ function App() {
                         </div>
                         <div className="col-md-4 p-5 faq">
                             <h5>Ask a Question</h5>
-                            <div class="mb-3">
-                                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Your Name*" />
+                            <div className="mb-3">
+                                <input type="email" className="form-control" id="exampleFormControlInput1" placeholder="Your Name*" />
                             </div>
-                            <div class="mb-3">
-                                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Subject*" />
+                            <div className="mb-3">
+                                <input type="email" className="form-control" id="exampleFormControlInput1" placeholder="Subject*" />
                             </div>
-                            <div class="mb-3">
-                                <textarea class="form-control" id="exampleFormControlTextarea1" placeholder='Type Your Message' rows="6"></textarea>
+                            <div className="mb-3">
+                                <textarea className="form-control" id="exampleFormControlTextarea1" placeholder='Type Your Message' rows="6"></textarea>
                             </div>
                             <button className='btn btn-danger'>Send Mail</button>
                         </div>
