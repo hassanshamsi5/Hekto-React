@@ -19,7 +19,7 @@ function App() {
             </section>
 
 
-            
+
             <section>
                 <div className="container main-content mt-5">
                     <div className="row">
@@ -32,6 +32,17 @@ function App() {
                                 <circle cx="90.5" cy="12.5" r="12.5" fill="#37DAF3" />
                             </svg>
                             <div className="py-5"></div>
+                            <section>
+                                <div className="container">
+                                    <div className="row">
+                                        <div className="col-md-12">
+                                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3619.46389069669!2d67.08082957535038!3d24.882153544389176!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3eb33eb5cd03b92b%3A0xae6a9089183bced0!2sDigiTrends!5e0!3m2!1sen!2s!4v1697642538250!5m2!1sen!2s"
+                                                width="600" height="450" style={{ border: 0 }} allowfullscreen
+                                                loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
                             <h4>Get In Touch</h4>
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mattis neque ultrices  tristique amet erat vitae eget dolor los vitae lobortis quis bibendum quam.</p>
                             <form>

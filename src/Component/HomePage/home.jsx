@@ -434,7 +434,6 @@ function App() {
               spaceBetween={50}
               slidesPerView={3}
 
-
               breakpoints={{
                 0: {
                   slidesPerView: 1,
@@ -517,7 +516,7 @@ function App() {
           </div>
         </div>
       </section>
-
+     
 
       <section className=''>
         <div className="container-fluid">

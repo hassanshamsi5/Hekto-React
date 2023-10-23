@@ -26,32 +26,32 @@ function App() {
                             <div className="col-6 col-md-2 mb-3">
                                 <h5>Catagories</h5>
                                 <ul className="nav flex-column">
-                                    <li className="nav-item mb-2"><Link to="/" className="nav-link p-0 ">Laptops & Computers</Link></li>
-                                    <li className="nav-item mb-2"><Link to="/" className="nav-link p-0 ">Cameras & Photography</Link></li>
-                                    <li className="nav-item mb-2"><Link to="/" className="nav-link p-0 ">Smart Phones & Tablets</Link></li>
-                                    <li className="nav-item mb-2"><Link to="/" className="nav-link p-0 ">Video Games & Consoles</Link></li>
-                                    <li className="nav-item mb-2"><Link to="/" className="nav-link p-0 ">Waterproof Headphones</Link></li>
+                                    <li className="nav-item mb-2"><Link to="../ShopGridDefault" className="nav-link p-0 n123 ">Laptops & Computers</Link></li>
+                                    <li className="nav-item mb-2"><Link to="/" className="nav-link p-0 n123 ">Cameras & Photography</Link></li>
+                                    <li className="nav-item mb-2"><Link to="/" className="nav-link p-0 n123 ">Smart Phones & Tablets</Link></li>
+                                    <li className="nav-item mb-2"><Link to="/" className="nav-link p-0 n123 ">Video Games & Consoles</Link></li>
+                                    <li className="nav-item mb-2"><Link to="/" className="nav-link p-0 n123 ">Waterproof Headphones</Link></li>
                                 </ul>
                             </div>
                             <div className="col-6 col-md-2 mb-3">
                                 <h5>Customer Care</h5>
                                 <ul className="nav flex-column">
-                                    <li className="nav-item mb-2"><Link to="../MyAccount    " className="nav-link p-0 ">My Account</Link></li>
-                                    <li className="nav-item mb-2"><Link to="/" className="nav-link p-0 ">Discount</Link></li>
-                                    <li className="nav-item mb-2"><Link to="/" className="nav-link p-0 ">Returns</Link></li>
-                                    <li className="nav-item mb-2"><Link to="/" className="nav-link p-0 ">Orders History</Link></li>
-                                    <li className="nav-item mb-2"><Link to="/" className="nav-link p-0 ">Order Tracking</Link></li>
+                                    <li className="nav-item mb-2"><Link to="../MyAccount    " className="nav-link p-0 n123 ">My Account</Link></li>
+                                    <li className="nav-item mb-2"><Link to="/" className="nav-link p-0 n123 ">Discount</Link></li>
+                                    <li className="nav-item mb-2"><Link to="/" className="nav-link p-0 n123 ">Returns</Link></li>
+                                    <li className="nav-item mb-2"><Link to="/" className="nav-link p-0 n123 ">Orders History</Link></li>
+                                    <li className="nav-item mb-2"><Link to="/" className="nav-link p-0 n123 ">Order Tracking</Link></li>
                                 </ul>
                             </div>
                             <div className="col-12 col-md-2 mb-3">
                                 <h5>Pages</h5>
                                 <ul className="nav flex-column">
-                                    <li className="nav-item mb-2"><Link to="/" className="nav-link p-0 ">Blog</Link></li>
-                                    <li className="nav-item mb-2"><Link to="/" className="nav-link p-0 ">Browse the Shop</Link></li>
-                                    <li className="nav-item mb-2"><Link to="/" className="nav-link p-0 ">Category</Link></li>
-                                    <li className="nav-item mb-2"><Link to="/" className="nav-link p-0 ">Pre-Built Pages</Link></li>
-                                    <li className="nav-item mb-2"><Link to="/" className="nav-link p-0 ">Visual Composer Elements</Link></li>
-                                    <li className="nav-item mb-2"><Link to="/" className="nav-link p-0 ">WooCommerce Pages</Link></li>
+                                    <li className="nav-item mb-2"><Link to="/" className="nav-link p-0 n123 ">Blog</Link></li>
+                                    <li className="nav-item mb-2"><Link to="/" className="nav-link p-0 n123 ">Browse the Shop</Link></li>
+                                    <li className="nav-item mb-2"><Link to="/" className="nav-link p-0 n123 ">Category</Link></li>
+                                    <li className="nav-item mb-2"><Link to="/" className="nav-link p-0 n123 ">Pre-Built Pages</Link></li>
+                                    <li className="nav-item mb-2"><Link to="/" className="nav-link p-0 n123 ">Visual Composer Elements</Link></li>
+                                    <li className="nav-item mb-2"><Link to="/" className="nav-link p-0 n123 ">WooCommerce Pages</Link></li>
                                 </ul>
                             </div>
                         </div>

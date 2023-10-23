@@ -7,11 +7,16 @@ import card4 from '../../Images/card4.png'
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import client from '../../Images/client.png'
-function App() {
+import { useProductContext } from '../../Context/productcontext'
+
+const App = () => {
+    const { myName } = useProductContext()
 
     return (
         <>
+           <h1>{myName}</h1>
             <section className='home'>
+
                 <div className="container">
                     <div className="row justify-content-center">
                         <div className="col-md-12 main-content mt-5">
@@ -125,7 +130,7 @@ function App() {
             </section>
 
             <section className='p-5'></section>
-
+            {" "}
         </>
     )
 }
