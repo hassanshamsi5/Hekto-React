@@ -1,82 +1,122 @@
-// import Navbar from './Component/Navbar/navbar'
-// import Home from './Component/HomePage/home'
-// import Footer from './Component/Footer/footer'
-// import Faq from './Component/FAQ/faq'
-// import Error404 from './Component/404/404'
-// import Aboutus from './Component/About us/about'
-// import ContactUs from './Component/Contact us/contact'
-// import MyAccount from './Component/MyAccount/account'
-// import OrderCompelete from './Component/OrderCompelete/order'
-// import SingleBlog from './Component/Single Blog/single.blog'
-// import BlogPage from './Component/BlogPage/blog'
-// import Demo from './Component/Demo/demo'
-// import ShoppingCArt from './Component/Shopping Cart/shoping'
-// import ProductDetail from './Component/Product Detail/product'
-// import ShopLeftSidebar from './Component/Shop left sidebar/shopleft'
-// import ShopGridDef from './Component/ShopGridDefault/shopgrid'
-// import Shoplist from './Component/ShopList/shoplist'
-// import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
-// import APi from './Component/apiproducts/api'
-// import Signup from './Component/MyAccount/signup'
+// // import Router from './Config/Router'
+
+// // function App() {
+// //   return (
+// //     <>
+// //     <Router/>
+// //     </>
+// //   )
+// // }
+// // export default App
 
 
-// function App() {
-//     return (
-//         <>
-//             <Router>
-//                 {/* <Navbar /> */}
-//                 <Routes>
-//                     {/* <Route path="/" element={<Home />} />
-//                     <Route path="*" element={<Error404 />} />
-//                     <Route path="/contact" element={<ContactUs />} /> */}
-//                     <Route path="/" element={<MyAccount />} />
-//                     <Route path="/home" element={<Home />} />
-//                     {/* <Route path="/blog" element={<BlogPage />} />
-//                     <Route path="/product" element={<ProductDetail />} />
-//                     <Route path="/shoplist" element={<Shoplist />} />
-//                     <Route path="/about" element={<Aboutus />} />
-//                     <Route path="/shopingcart" element={<ShoppingCArt />} />
-//                     <Route path="/ShopGridDefault" element={<ShopGridDef />} />
-//                     <Route path="/APi" element={<APi />} />
-//                     <Route path="/signup" element={<Signup />} /> */}
-//                     {/* <Faq/> */}
-//                     {/* <OrderCompelete/> */}
-//                     {/* <SingleBlog/> */}
-//                     {/* <Demo /> */}
-//                     {/* <ProductDetail/> */}
-//                     {/* <ShopLeftSidebar /> */}
-//                     <Route />
-//                 </Routes>
-//                 {/* <Footer /> */}
-//             </Router>
+// import React, { useEffect, useState } from "react";
+// import Header from "./com/New folder/header";
+// import Search from "./com/New folder1/search";
+// import AddProducts from "./com/New folder2/addproducts";
+// import CardBody from "./com/New folder3/cardbody";
+// import Button from "./com/New folder4/button";
+// import "./App.css";
 
-//         </>
-//     )
-// }
-// export default App
+// const App = () => {
+//   const [items, setItem] = useState([]);
+//   const [searchValue, setSearchValue] = useState("");
+//   const [addedItems, setAddedItem] = useState([]);
+//   const [showAddProducts, setShowAddProducts] = useState(false);
+
+//   useEffect(() => {
+//     fetch("https://fakestoreapi.com/products/")
+//       .then((res) => res.json())
+//       .then((data) => setItem(data));
+//   }, []);
+//   function changingSrarchData(e) {
+//     setSearchValue(e.target.value);
+//   }
+//   const itmesFilter = items.filter((item) =>
+//     item.title.toLowerCase().includes(searchValue.toLowerCase())
+//   )
+//   function addItem(item) {
+//     item.addNumber = 1;
+//     const itemArr = addedItems;
+//     setAddedItem([...itemArr, item]);
+//     localStorage.setItem('addedItems', JSON.stringify([...itemArr, item]));
+//   }
+//   function removeItem(item) {
+//     const newItems = addedItems.filter((addedItem) => addedItem.id !== item.id);
+//     setAddedItem(newItems);
+//     localStorage.setItem('addedItems', JSON.stringify(newItems));
+//     // localStorage.clear('')
+//   }
+//   useEffect(() => {
+//     const storedItems = localStorage.getItem('addedItems');
+//     if (storedItems) {
+//       setAddedItem(JSON.parse(storedItems));
+//     }
+//   }, []);
+
+//   return (
+//     <div>
+//       <div className="body__container">
+//         <div className="nav">
+//           <Header />
+//           <div className="nav-right">
+//             <Search
+//               products={items}
+//               value={searchValue}
+//               onChangeData={changingSrarchData}
+//             />
+//             <Button num={addedItems.length} click={setShowAddProducts} />
+//           </div>
+//         </div>
+//         {showAddProducts && (
+//           <AddProducts
+//             click={setShowAddProducts}
+//             items={addedItems}
+//             removeItem={removeItem}
+//             setAddedItem={setAddedItem}
+//           />
+//         )}
+//         <CardBody
+//           products={itmesFilter}
+//           addItem={addItem}
+//           removeItem={removeItem}
+//           addedItems={addedItems}
+//         />
+//       </div>
+//     </div>
+//   );
+// };
+
+// export default App;
 
 
 
-import { BrowserRouter, Route, Routes } from "react-router-dom";
-import MyAccount from './Component/MyAccount/account'
-import Home from './Component/HomePage/home'
-import PrivateRoute from "./Component/protectedroutes/protected";
-import AnonymousRoute from "./Component/AnonymousRoute/AnonymousRoute";
+import React from 'react'
+import { useDispatch, useSelector } from 'react-redux'
+import { incNumber, decNumber } from './action/index'
 
+const App = () => {
+  const myState = useSelector((state) => state.changeTheNumber)
+  const dispatch = useDispatch()
 
-function App() {
-    return (
-        <BrowserRouter>
-            <Routes>
-                <Route element={<PrivateRoute />}>
-                    <Route path="/login" element={<MyAccount />} />
-                </Route>
-                 <Route element={<AnonymousRoute />}>
-                    <Route path="/" element={<Home />} />
-                </Route> 
-            </Routes>
-        </BrowserRouter>
-    );
+  const handleInputChange = (e) => {
+    const value = e.target.value
+    console.log(value)
+  }
+
+  return (
+    <div>
+      <h1>React Redux</h1>
+      <div className="">
+        <button onClick={() => dispatch(decNumber())}> <span>-</span></button>
+        <input type="text" onChange={handleInputChange} value={myState} />
+        <button onClick={() => dispatch(incNumber())}> <span>+</span></button>
+      </div>
+    </div>
+  )
 }
 
-export default App;
+export default App
+
+
+
