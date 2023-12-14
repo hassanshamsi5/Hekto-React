@@ -1,13 +1,13 @@
-// // import Router from './Config/Router'
+// import Router from './Config/Router'
 
-// // function App() {
-// //   return (
-// //     <>
-// //     <Router/>
-// //     </>
-// //   )
-// // }
-// // export default App
+// function App() {
+//   return (
+//     <>
+//     <Router/>
+//     </>
+//   )
+// }
+// export default App
 
 
 // import React, { useEffect, useState } from "react";
@@ -84,39 +84,25 @@
 //         />
 //       </div>
 //     </div>
-//   );
+//   ); 
 // };
 
 // export default App;
 
 
 
-import React from 'react'
-import { useDispatch, useSelector } from 'react-redux'
-import { incNumber, decNumber } from './action/index'
+import Router from './ProductDetails/router'
 
-const App = () => {
-  const myState = useSelector((state) => state.changeTheNumber)
-  const dispatch = useDispatch()
-
-  const handleInputChange = (e) => {
-    const value = e.target.value
-    console.log(value)
-  }
-
+function App() {
   return (
-    <div>
-      <h1>React Redux</h1>
-      <div className="">
-        <button onClick={() => dispatch(decNumber())}> <span>-</span></button>
-        <input type="text" onChange={handleInputChange} value={myState} />
-        <button onClick={() => dispatch(incNumber())}> <span>+</span></button>
-      </div>
-    </div>
+    <>
+      <Router />
+    </>
   )
 }
-
 export default App
+
+
 
 
 

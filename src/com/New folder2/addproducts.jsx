@@ -8,8 +8,6 @@ const AddProducts = ({ items, click, removeItem, setAddedItem }) => {
       return pre + Number(cur.addNumber) * Number(cur.price);
     }, 0)
     .toFixed(2);
-  // let curDate = new Date();
-  // console.log(curDate);
   const showDivRef = useRef(null);
 
   return (
@@ -18,7 +16,6 @@ const AddProducts = ({ items, click, removeItem, setAddedItem }) => {
         <div className="check-out-container">
           <div className="check-out-print">
             <h1 className="check-out-title">Shopping</h1>
-            {/* <p>{curDate}</p> */}
             <table>
               <thead>
                 <tr>

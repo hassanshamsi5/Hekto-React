@@ -8,3 +8,14 @@ export const decNumber = () => {
         type: "DECREMENT"
     }
 }
+
+export const setData = (data) => {
+    return {
+      type: "SET_DATA",
+      payload: data,
+    };
+  };
+  
+
+
+

@@ -5,12 +5,25 @@
 //     changeTheNumber
 // })
 
+// import { combineReducers } from "redux";
+// import  { changeTheNumber,dataAPi } from './increDreament'
+
+// const rootReducer = combineReducers({
+
+//   changeTheNumber,
+//   dataAPi
+// });
+
+// export default rootReducer;
+
+
 import { combineReducers } from "redux";
-import changeTheNumber from './increDreament'
+import {  dataAPi } from './increDreament';
 
 const rootReducer = combineReducers({
-
-  changeTheNumber
+  // changeTheNumber,
+  dataAPi
 });
 
 export default rootReducer;
+

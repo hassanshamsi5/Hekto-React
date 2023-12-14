@@ -3,7 +3,7 @@ import './navbar.css'
 import { Link, useNavigate } from 'react-router-dom';
 
 function App() {
-    const navigate = useNavigate
+    const navigate = useNavigate()
     // const [isLoggedIn, setIsLoggedIn] = useState(true);
     const handleout = () => {
         // console.log("asdas");
@@ -37,8 +37,6 @@ function App() {
                             <li className="nav-item">
                                 {<Link className="nav-link textt12" to="/myAccount">Login</Link> &&
                                     <Link onClick={() => handleout()} className="nav-link textt12" to="/">Logout</Link>}
-
-
                             </li>
                             {/* <li className="nav-item">
                                 {isLoggedIn ? (
