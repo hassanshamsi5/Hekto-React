@@ -21,7 +21,7 @@ const Addtocart = () => {
 
     // const updateQuantity = (itemId, newQuantity) => {
     //     const updatedCartItems = cartItems.map(item =>
-    //         item.id === itemId ? { ...item, quantity: newQuantity } : item
+    //         item.id === itemId ? { ...item, quantity: newQuantity } : item   
     //     );
     //     setCartItems(updatedCartItems);
     //     localStorage.setItem('cartItems', JSON.stringify(updatedCartItems));
@@ -43,6 +43,7 @@ const Addtocart = () => {
         window.location.reload();
     }
     const proceedToCheckout = () => {
+        
         const isAuthenticated = null
         if (isAuthenticated) {
             navigate('/checkout');
@@ -73,7 +74,7 @@ const Addtocart = () => {
                                 cartItems.map((item) => (
                                     <tr key={item.id}>
                                         <td>
-                                            <img src={item.image} width={50} height={50} alt={item.title} />&nbsp; &nbsp; 
+                                            <img src={item.image} width={50} height={50} alt={item.title} />&nbsp; &nbsp;
                                             {item.title}
                                         </td>
                                         <td>${item.price.toFixed(2)}</td>
@@ -121,7 +122,7 @@ const Addtocart = () => {
                         <div className="border-bottom mt-md-3 m-2 ms-0"></div>
 
                         <div className="custom-control custom-checkbox my-3 mr-sm-2">
-                            <input type="checkbox" className="custom-control-input bg-00" id="customControlInline" />&nbsp; 
+                            <input type="checkbox" className="custom-control-input bg-00" id="customControlInline" />&nbsp;
                             <label className="custom-control-label" htmlFor="customControlInline"> Shipping & taxes calculated at checkout</label>
                         </div>
                         <button className='btn btn-primary w-50' onClick={() => proceedToCheckout()}>
