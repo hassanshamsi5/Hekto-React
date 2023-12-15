@@ -7,7 +7,7 @@ const App = () => {
     // const myState = useSelector((state) => state.changeTheNumber);
     const { dataAPi } = useSelector((state) => state);
     const dispatch = useDispatch();
-    
+
     // const handleInputChange = (e) => {
     //   const value = e.target.value;
     //   console.log(value);
@@ -27,19 +27,21 @@ const App = () => {
         fetchData();
     }, []);
 
-    const [showMore, setShowMore] = useState({});
+    const [showMore,
+        //  setShowMore
+    ] = useState({});
 
-    const toggleDescription = (productId) => {
-        setShowMore((prevShowMore) => ({
-            ...prevShowMore,
-            [productId]: !prevShowMore[productId],
-        }));
-    }
+    // const toggleDescription = (productId) => {
+    //     setShowMore((prevShowMore) => ({
+    //         ...prevShowMore,
+    //         [productId]: !prevShowMore[productId],
+    //     }));
+    // }
 
     return (
 
         <div>
-             {/*<button onClick={() => dispatch(decNumber())}> <span>-</span></button>
+            {/*<button onClick={() => dispatch(decNumber())}> <span>-</span></button>
                 <input type="text" onChange={handleInputChange} value={myState} style={{ width: 30 }} />
                 <button onClick={() => dispatch(incNumber())}> <span>+</span></button> */}
             <div className="container">

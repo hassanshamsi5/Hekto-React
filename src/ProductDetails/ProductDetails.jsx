@@ -8,13 +8,6 @@ const ProductDetails = () => {
     const navigate = useNavigate()
     const product = dataAPi.find((item) => item.id === parseInt(id, 10));
 
-    // const addtocart = () => {
-    //     navigate('/addToCart')
-    //     }
-    // const addtocart = () => {    
-    //     navigate(`/addToCart/${id}`, { state: { product } });
-    //   };
-
     const addtocart = () => {
         saveProductToLocalStorage(product);
         navigate('/addToCart', { state: { product } })

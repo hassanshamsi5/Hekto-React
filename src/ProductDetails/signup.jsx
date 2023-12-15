@@ -1,7 +1,3 @@
-import React, { useState } from 'react';
-// import '../../App.css';
-// import img55 from '../../Images/55.png';
-
 function App() {
     return (
         <>

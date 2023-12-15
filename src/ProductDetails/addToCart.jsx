@@ -4,9 +4,11 @@ import {
     useNavigate
 } from 'react-router-dom';
 
+import { Alert } from 'antd';
+
+
 const Addtocart = () => {
-    // const location = useLocation()
-    // const product = location.state.product;
+    const [showAlert, setShowAlert] = useState(false);
     const navigate = useNavigate()
     const [cartItems, setCartItems] = useState([]);
 
@@ -19,39 +21,48 @@ const Addtocart = () => {
         setCartItems(savedCartItems);
     };
 
-    // const updateQuantity = (itemId, newQuantity) => {
-    //     const updatedCartItems = cartItems.map(item =>
-    //         item.id === itemId ? { ...item, quantity: newQuantity } : item   
-    //     );
-    //     setCartItems(updatedCartItems);
-    //     localStorage.setItem('cartItems', JSON.stringify(updatedCartItems));
-    // };
+    useEffect(() => {
+        if (showAlert) {
+            const timeoutId = setTimeout(() => {
+                setShowAlert(false)
+            }, 5000)
+            return () => clearTimeout(timeoutId);
+        }
+    }, [showAlert])
 
     const updateQuantity = (itemId, newQuantity) => {
-        newQuantity = Math.max(1, Math.min(newQuantity, 10));
+        newQuantity = Math.max(1, Math.min(newQuantity, 10))
+
+        if (newQuantity >= 10) {
+            setShowAlert(true)
+
+        } else {
+            setShowAlert(false)
+        }
         const updatedCartItems = cartItems.map(item =>
             item.id === itemId ? { ...item, quantity: newQuantity } : item
         );
         setCartItems(updatedCartItems);
-        localStorage.setItem('cartItems', JSON.stringify(updatedCartItems));
-    };
+        localStorage.setItem('cartItems', JSON.stringify(updatedCartItems))
+    }
+
     const update = () => {
         navigate('/api')
     }
+
     const clear = () => {
-        localStorage.clear();
-        window.location.reload();
+        localStorage.clear()
+        window.location.reload()
     }
     const proceedToCheckout = () => {
-        
         const isAuthenticated = null
         if (isAuthenticated) {
-            navigate('/checkout');
+            navigate('/checkout')
         } else {
-            navigate('/signin');
+            navigate('/signin')
         }
-    };
-
+    };                    
+  
 
     return (
 
@@ -59,6 +70,7 @@ const Addtocart = () => {
             <div className="row">
                 <div className="col-md-8">
                     <h3>Shopping Cart</h3>
+                    {showAlert && <Alert message="limited stock" type="error" />}
                     <table className="table">
                         <thead>
                             <tr>
@@ -128,7 +140,6 @@ const Addtocart = () => {
                         <button className='btn btn-primary w-50' onClick={() => proceedToCheckout()}>
                             Proceed to checkout
                         </button>
-                        {/* <button className='btn btn-primary w-50'>Proceed to checkout</button> */}
                     </div>
                     <h3 className='text-center mt-5'>Calculate Shopping</h3>
                     <div className="row  main-content faq p-4 mt-3">
