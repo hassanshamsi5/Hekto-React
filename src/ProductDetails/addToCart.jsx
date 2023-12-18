@@ -3,7 +3,6 @@ import {
     //  useLocation,
     useNavigate
 } from 'react-router-dom';
-
 import { Alert } from 'antd';
 
 
@@ -18,6 +17,7 @@ const Addtocart = () => {
 
     const loadCartItemsFromLocalStorage = () => {
         const savedCartItems = JSON.parse(localStorage.getItem('cartItems')) || [];
+        // console.log(savedCartItems);
         setCartItems(savedCartItems);
     };
 
@@ -47,13 +47,10 @@ const Addtocart = () => {
     }
 
     const update = () => {
+
         navigate('/api')
     }
 
-    const clear = () => {
-        localStorage.clear()
-        window.location.reload()
-    }
     const proceedToCheckout = () => {
         const isAuthenticated = null
         if (isAuthenticated) {
@@ -61,8 +58,21 @@ const Addtocart = () => {
         } else {
             navigate('/signin')
         }
-    };                    
-  
+    }
+
+    const clear = (keys) => {
+        keys.forEach((key) => {
+            localStorage.removeItem(key);
+        })
+        window.location.reload();
+    }
+
+    const specificitem = (itemId) => {
+        const updatedCartItems = cartItems.filter(item => item.id !== itemId);
+        setCartItems(updatedCartItems);
+        localStorage.setItem('cartItems', JSON.stringify(updatedCartItems));
+    }
+
 
     return (
 
@@ -96,6 +106,10 @@ const Addtocart = () => {
                                             <span style={{ cursor: 'pointer' }} onClick={() => updateQuantity(item.id, item.quantity + 1)}>+</span>
                                         </td>
                                         <td>${(item.price * item.quantity).toFixed(2)}</td>
+                                        <td onClick={() => specificitem(item.id)}>
+                                            <button type="button" className="btn btn-close" aria-label="Close">
+                                            </button>
+                                        </td>
                                     </tr>
                                 ))
                             ) : (
@@ -110,7 +124,7 @@ const Addtocart = () => {
                             <button onClick={() => update()} className='btn btn-primary'>Update cart</button>
                         </div>
                         <div className="col-md-6 col-6 text-end">
-                            <button onClick={() => clear()} className='btn btn-primary'>Clear cart</button>
+                            <button onClick={() => clear(['cartItems'])} className='btn btn-primary'>Clear cart</button>
                         </div>
                     </div>
                 </div>

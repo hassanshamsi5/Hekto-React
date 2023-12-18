@@ -22,12 +22,14 @@ const Login = () => {
             .then((response) => {
                 if (response.ok) {
                     return response.json();
+                    
                 } else {
                     throw new Error('Invalid credentials');
                 }
             })
             .then((data) => {
                 console.log('Login successful', data);
+                localStorage.setItem('user', JSON.stringify(data));
                 navigate('/');
 
             })
@@ -36,7 +38,6 @@ const Login = () => {
                 setError(err.message);
             });
     };
-
 
     return (
         <>

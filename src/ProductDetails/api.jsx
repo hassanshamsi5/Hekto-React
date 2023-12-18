@@ -27,9 +27,7 @@ const App = () => {
         fetchData();
     }, []);
 
-    const [showMore,
-        //  setShowMore
-    ] = useState({});
+    const [showMore, setShowMore] = useState({});
 
     // const toggleDescription = (productId) => {
     //     setShowMore((prevShowMore) => ({

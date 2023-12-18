@@ -1,6 +1,8 @@
 import React from 'react';
 import { useSelector } from 'react-redux';
 import { useNavigate, useParams } from 'react-router-dom';
+import { Rate } from 'antd'
+
 
 const ProductDetails = () => {
     const { dataAPi } = useSelector((state) => state);
@@ -36,9 +38,12 @@ const ProductDetails = () => {
                             <img src={product.image} width={220} height={300} className="img-fluid " alt={product.title} />
                         </div>
                         <div className="col-md-4">
-                            <h2>{product.id}</h2>
-                            <h2>{product.title}</h2>
+                            <h2>ID no#{product.id}</h2>
+                            <h2>Title: {product.title}</h2>
                             <p>{product.description}</p>
+                            <p> {product.category} </p> 
+                            <Rate defaultValue={product.rating.rate} />
+                            <span>Ratnig: {product.rating.rate} </span>
                             <h3 style={{ color: 'red' }}>$. {product.price}</h3>
                             <button onClick={() => addtocart()} className='btn btn-primary'>Add to Cart</button>
                         </div>
@@ -51,4 +56,4 @@ const ProductDetails = () => {
     );
 };
 
-export default ProductDetails;
+export default ProductDetails
